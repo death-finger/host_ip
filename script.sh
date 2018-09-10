@@ -2,8 +2,8 @@
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
 
 
-cd /root/zabbix_ip
-curl ipinfo.io/ip > ./address.txt
+cd /root/host_ip
+curl http://members.3322.org/dyndns/getip > ./address.txt
 
 git commit -a -m "Updated"
 git push origin master
